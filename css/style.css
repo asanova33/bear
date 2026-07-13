@@ -2744,3 +2744,7 @@ body {
 .composition {
     background: none;
 }
+
+.row{
+    margin-bottom: 20px;
+}
