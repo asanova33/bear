@@ -2723,3 +2723,17 @@ img {
     align-items:center;
     font-size:34px;
 }
+
+@media (max-width: 400px) {
+    .steps__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px 36px 0px;
+    }
+
+    .steps__title{
+        font-size: 19px;
+    }
+}
