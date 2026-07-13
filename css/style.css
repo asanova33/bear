@@ -2453,3 +2453,103 @@ img {
     margin:0;
 }
 }
+
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: url(../img/ChatGPT\ Image\ 13\ июл.\ 2026\ г.\,\ 14_11_35.png);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        padding-top: 19px;
+    }
+}
+
+.composition {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    background: linear-gradient(
+        180deg,
+        #eafcff 0%,
+        #f4fff0 45%,
+        #fffceb 100%
+    );
+}
+
+.composition::before{
+    content:"";
+    position:absolute;
+    top:-80px;
+    left:0;
+    width:100%;
+    height:180px;
+    background:url("img/wave-top.svg") no-repeat center/cover;
+}
+
+.composition::after{
+    content:"";
+    position:absolute;
+    bottom:-80px;
+    left:0;
+    width:100%;
+    height:180px;
+    background:url("img/wave-bottom.svg") no-repeat center/cover;
+}
+
+.composition .container{
+    position:relative;
+    z-index:2;
+}
+
+.composition .container::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:#b7f4d5;
+    border-radius:50%;
+    top:-70px;
+    left:-120px;
+    opacity:.35;
+    filter:blur(20px);
+}
+
+.composition .container::after{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    background:#ffe69a;
+    border-radius:50%;
+    right:-80px;
+    bottom:-80px;
+    opacity:.3;
+    filter:blur(20px);
+}
+
+.ingredient-card{
+    background:#fff;
+    border-radius:28px;
+    padding:30px 25px;
+    border:3px solid #d8f2dd;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.ingredient-card:hover{
+    transform:translateY(-10px);
+    border-color:#8fd17f;
+}
+
+.ingredient-card__icon{
+    width:75px;
+    height:75px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#f5fff5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:34px;
+}
