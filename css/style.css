@@ -2397,7 +2397,7 @@ img {
 }
 
 /* На мобильных */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
 
     .steps__list {
         display: none;
@@ -2452,6 +2452,176 @@ img {
     line-height:1.7;
     margin:0;
 }
+} */
+
+@media (max-width: 768px) {
+
+    .steps {
+
+        background-image: url("../img/ChatGPT\ Image\ 13\ июл.\ 2026\ г.\,\ 15_15_00.png");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+    }
+
+}
+
+
+
+@media (max-width:768px){
+
+    .steps{
+        min-height:1400px;
+    }
+
+}
+
+@media (max-width:768px){
+
+.steps__list{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    gap:30px;
+    padding: 0px 85px 0px;
+}
+
+.steps__arrow{
+    display:none;
+}
+
+.steps__item{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:30px 22px 24px;
+
+    box-shadow:0 12px 35px rgba(34,73,126,.08);
+
+    transition:.3s;
+}
+
+.steps__item:hover{
+    transform:translateY(-4px);
+}
+
+/* Лесенка */
+
+.steps__item:nth-child(1){
+    margin-right:40px;
+}
+
+.steps__item:nth-child(3){
+    margin-left:40px;
+}
+
+.steps__item:nth-child(5){
+    margin-right:20px;
+}
+
+/* Цветная шапка */
+
+.steps__item::before{
+
+    position:absolute;
+
+    top:-14px;
+    left:22px;
+
+    padding:7px 16px;
+
+    border-radius:30px;
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+.steps__item:nth-child(1)::before{
+    content:"Шаг 1";
+    background:#FFD54F;
+}
+
+.steps__item:nth-child(3)::before{
+    content:"Шаг 2";
+    background:#7EC8FF;
+}
+
+.steps__item:nth-child(5)::before{
+    content:"Шаг 3";
+    background:#7EDB92;
+}
+
+/* Иконка */
+
+.steps__icon{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    margin:10px auto 18px;
+
+    background:#F5FAFF;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:32px;
+
+    color:#5DA9FF;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.steps__item-title{
+
+    text-align:center;
+
+    color:#1F3D6D;
+
+    font-size:20px;
+
+    margin-bottom:12px;
+}
+
+.steps__text{
+
+    text-align:center;
+
+    color:#667085;
+
+    line-height:1.6;
+}
+
+/* Следы лапок */
+
+.steps__item:not(:last-child)::after{
+
+    content:"🐾";
+
+    position:absolute;
+
+    bottom:-24px;
+    left:50%;
+
+    transform:translateX(-50%) rotate(18deg);
+
+    font-size:22px;
+
+    opacity:.35;
+}
+
 }
 
 
