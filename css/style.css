@@ -2673,7 +2673,13 @@ img {
 }
 
 
-
+.ingredient-card__icon img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
 
 .ingredient-card{
     background:#fff;
