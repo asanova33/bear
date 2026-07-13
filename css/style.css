@@ -2672,31 +2672,8 @@ img {
     z-index:2;
 }
 
-.composition .container::before{
-    content:"";
-    position:absolute;
-    width:250px;
-    height:250px;
-    background:#b7f4d5;
-    border-radius:50%;
-    top:-70px;
-    left:-120px;
-    opacity:.35;
-    filter:blur(20px);
-}
 
-.composition .container::after{
-    content:"";
-    position:absolute;
-    width:220px;
-    height:220px;
-    background:#ffe69a;
-    border-radius:50%;
-    right:-80px;
-    bottom:-80px;
-    opacity:.3;
-    filter:blur(20px);
-}
+
 
 .ingredient-card{
     background:#fff;
@@ -2736,4 +2713,28 @@ img {
     .steps__title{
         font-size: 19px;
     }
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("../img/Без\ названия\ \(4\).jfif"); /* путь к изображению */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; /* можно убрать, если будут лаги на телефоне */
+}
+
+.reviews {
+    background: none;
+}
+
+.product {
+    background: none;
+}
+
+.composition {
+    background: none;
 }
