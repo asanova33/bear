@@ -2545,17 +2545,17 @@ img {
 }
 
 .steps__item:nth-child(1)::before{
-    content:"Шаг 1";
+    content:"1-qadam";
     background:#FFD54F;
 }
 
 .steps__item:nth-child(3)::before{
-    content:"Шаг 2";
+    content:"2-qadam";
     background:#7EC8FF;
 }
 
 .steps__item:nth-child(5)::before{
-    content:"Шаг 3";
+    content:"3-qadam";
     background:#7EDB92;
 }
 
